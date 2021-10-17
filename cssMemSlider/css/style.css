@@ -148,28 +148,27 @@ img {
     box-shadow: 0 0 1rem 1.5rem rgba(0, 0, 0, 0.75);
 }
 
-#slide-1:checked ~ .item-1, 
-#slide-1:checked ~ .text-gifs {
+#slide-1:checked ~ .slider-container .slider-gifs. item-1, 
+#slide-1:checked ~ .text-container .text-gifs .text-1 {
     transform: translateX(0);
 }
 
-#slide-2:checked ~ .item-2,
-#slide-2:checked ~ .text-gifs {
+#slide-2:checked ~ .slider-container .slider-gifs .item-2,
+#slide-2:checked ~ .text-container .text-gifs .text-2 {
     transform: translateX(-100%);
 }
 
-#slide-3:checked ~ .item-3,
-#slide-3:checked ~ .text-gifs {
+#slide-3:checked ~ .slider-container .slider-gifs .item-3,
+#slide-3:checked ~ .text-container .text-gifs .text-3 {
     transform: translateX(-200%);
 }
 
-#slide-4:checked ~ .item-4,
-#slide-4:checked ~ .text-gifs {
+#slide-4:checked ~ .slider-container .slider-gifs .item-4,
+#slide-4:checked ~ .text-container .text-gifs .text-4 {
     transform: translateX(-300%);
 }
 
-#slide-5:checked ~ .item-5,
-#slide-5:checked ~ .text-gifs {
+#slide-5:checked ~ .slider-container .slider-gifs .item-5,
+#slide-5:checked ~ .text-container .text-gifs .text-5 {
     transform: translateX(-400%);
-}
 
