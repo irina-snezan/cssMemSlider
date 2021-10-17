@@ -1,40 +1,132 @@
-html,
-h1,
-h2,
-h3,
-p,
-div,
-ul,
-ol,
-li,
-header,
-main,
-section {
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
+:root {
+	--bg-color: #161515;
+	--light-color: #ffffff;
+	--slider-bg-color: #1b2129;
+	--font-size: 10px;
+	--btn-color: #612983;
+	--btn-color-hover: #a142b9;
+	--btn-color-active: #7b6786;
+  }
+
+
+body {
+	font-family: 'Karla', sans-serif;
+	font-size: 2rem;
+	line-height: 1.5; 
+	color: var(--light-color);
+	background: var(--bg-color);
+}
 
 main {
-    background-color: #0a0a0a;
-	max-width: 1920px;
-	width: 100%;
-	margin: auto;
-   
-
+    width: 100%;
+	min-height: 100vh;
+	margin:  0 auto;
 }
-. wrapper {
 
+.wrapper {
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	margin:  2rem 3rem;
 }
+
 .slider {
-    width: 1200px;
-	margin: auto;
+	display: inline-block;
+    width: 75vw;
+	min-height: 60vh;
+	margin: 0 auto;
+	padding: 2rem;
+	background-color: #2b2c40;
+	border-radius: 0.7rem;
+	box-shadow: 0 0 0.2rem rgba(0, 0, 0, .5);
+} 
+
+.slider-container {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
-p {
-    color: #ffffff;  
+
+.slider-gifs {
+	display: flex;
+	overflow: hidden;
+	border-radius: 0.2rem;
+	transition: all 0.7s ease;
 }
+
+.gif {
+	display: inline-block;
+	min-width: 100%;
+	height: 70rem;
+	border-radius: 0.4rem;
+} 
+
 img {
 	width: 100%;
 	height: 100%;
-  }
-  
+}
+/* slider-nav*/
+
+.controls {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1rem;
+}
+
+.text-container {
+	width: 60%;
+    overflow: hidden;
+}
+
+.text-gifs {
+	display: flex;
+	transition: all 0.5s ease;
+}
+
+.text {
+	min-width: 100%;
+}
+
+.control-contianer {
+	max-width: 55rem;
+}
+
+.point-controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.point-control {
+	padding: 1rem;
+	cursor: pointer;
+	user-select: none;
+}
+
+.point-control span {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--btn-color);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 3rem 0.1rem rgba(0, 0, 0, 0.4);
+}
+
+.wrapper > input {
+	display: none;
+}
+
+/*
+.text-gifs > p {
+	display: none;
+} */
